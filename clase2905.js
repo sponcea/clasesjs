@@ -42,3 +42,49 @@ var resultado2= convocadosSeleccionNacional.filter(function(convocado) {
 });
 
 console.table(resultado2);
+
+///////////////FUNCIONES///////////////
+
+console.clear();
+
+const bloqueImpresion=document.getElementById("bloque");
+
+//implemento lo que quiero que la función haga
+
+//En este caso la función muestra el resultado en consola y dentro del html en el div con id="bloque"
+function sumar(num1, num2) {
+    console.log(num1+num2);
+    bloqueImpresion.innerHTML=num1+num2;
+}
+
+//En este caso la función retorna el resultado para ser utilizado fuera de la función
+function restar(num1, num2) {
+    var resultadResta=num2-num1;
+    return resultadResta;
+
+}
+
+//invoco a la función
+//En este caso num1=1, num2=2
+sumar(1,2);
+
+//En este caso num1=34, num2=10
+sumar(34,10);
+
+//En este caso num1=15, num2=30
+
+//Almaceno el resultado de la función restar en la variable resultado y lo imprimo en consola
+var resultado=restar(30,15);
+console.log("El resultado de la resta es: ", resultado);
+
+var editorImagenes = {
+    cargarImagen: function(id) {
+        console.log("Cargando imagen con id: "+id);
+    },
+    borrarImagen: function(id) {
+        //console.log("Borarndo imagen con id: "+id);
+        console.log(`Borarndo imagen con id: ${id}`);
+    }
+};
+
+editorImagenes.cargarImagen(150);
