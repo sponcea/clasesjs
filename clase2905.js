@@ -27,7 +27,7 @@ var  convocadosSeleccionNacional = [
 ];
 
 var resultado=convocadosSeleccionNacional.some(function(convocado){
-    return convocado.nombre="Edison";
+    return convocado.nombre=="Edison";
 });
 console.log("¿Está orejitas Flores convocado?");
 if (resultado) {
@@ -83,8 +83,10 @@ var editorImagenes = {
     },
     borrarImagen: function(id) {
         //console.log("Borarndo imagen con id: "+id);
-        console.log(`Borarndo imagen con id: ${id}`);
+        console.log(`Borrando imagen con id: ${id}`);
     }
 };
 
 editorImagenes.cargarImagen(150);
+
+editorImagenes.borrarImagen(31);
