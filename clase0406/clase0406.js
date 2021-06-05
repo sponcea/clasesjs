@@ -210,3 +210,29 @@ function cambiarRojo() {
 function cambiarBlanco() {
     document.getElementById("titulo").style.color="white";
 }
+
+function cambiarFondo() {
+    document.getElementById("nombre").style.backgroundColor="green";
+}
+
+function cambiarFondoWeb() {
+    document.getElementById("cuerpoweb").style.backgroundColor="#ffa100";
+}
+
+function cargarUrl() {
+    console.log("imprimiendo luego de la carga");
+    document.getElementById("impresion").innerHTML="Cargando una url";
+}
+
+
+//Definos los EventListener 
+//el método addEventListener permite un funcion esté pendiente de la ejecución de un evento en el window, el evento puede ser cualquiera de los vistos inicialmente, pero su sintaxis se modifica
+
+//window.addEventlistener(el evento que se espera ocurra, la accion que quiero ejecutar);
+
+window.addEventListener('load', function() {
+    console.log("reconocimos el evento load");
+    document.getElementById("impresion").innerHTML="Cargando una url";
+});
+
+window.addEventListener('load',cargarUrl);
