@@ -177,7 +177,7 @@ var dato=1;
 switch (dato) {
     case 10: //(dato==10)?
         console.log("El valor es 10");
-        break;
+        break; //hace que termine el switch y continue con el flujo del programa
     case 20: //(dato==20)?
         console.log("El valor es 20");
         break;
@@ -202,7 +202,7 @@ function convertirMayusculas() {
     nombre.value=nombre.value.toUpperCase();
 }
 
-//onmouseover
+//onmouseover y onmouseout
 function cambiarRojo() {
     document.getElementById("titulo").style.color="red";
 }
