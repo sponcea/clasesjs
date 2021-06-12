@@ -130,3 +130,26 @@ mensaje.addEventListener('input',leerTexto);
 
 //Ahora que llenamos el objeto camposFormulario, estamos pendientes del evento submit del formulario
 formulario.addEventListener('submit', validarFormulario);
+
+//IMPLEMENTAACION DEL DARK MODE
+function activarDarkMode() {
+    
+    //Referencia al body de la página web, para poder cambiar su background color
+    const fondoWeb=document.body;
+    const mainContenedor=document.querySelector('main.contenedor'); //le estoy diciendo que haga referencia a un <main class="contenedor">...</main>
+    
+    fondoWeb.classList.toggle("dark-mode");
+    mainContenedor.classList.toggle("dark-mode");
+    mainContenedor.classList.toggle('sombra-dark-mode');
+    formulario.classList.toggle('formulario-dark-mode');
+}
+
+//buscamos la referencia del elemento
+const botonDarkMode=document.querySelector('.boton-dark-mode');
+botonDarkMode.addEventListener('click', activarDarkMode);
+
+//Detectamos si el navegador tiene el modo oscuro
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches)  {
+    activarDarkMode();
+}

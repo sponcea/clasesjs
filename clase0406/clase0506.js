@@ -3,7 +3,7 @@
 //window.addEventlistener(el evento que se espera ocurra, la accion que quiero ejecutar);
 //Defino mis funciones
 function imprimirEnConsola() {
-    console.log("La página cargó correctamente");
+    //console.log("3ro: La página cargó correctamente");
 }
 
 //DEfino mis listeners
@@ -12,21 +12,22 @@ function imprimirEnConsola() {
 window.addEventListener('load', imprimirEnConsola);
 
 window.addEventListener('scroll', function() {
-    console.log('scrolling...');
+    //  console.log('scrolling...');
 });
 
 //DOMContentLoaded: solo carga HTML
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("No, yo me ejecuto primero");
+    //console.log("1ro: No, yo me ejecuto primero");
 });
 window.addEventListener('DOMContentLoaded', function() {
-    console.log("yo me ejecuto primero");
+    //console.log("2do: yo me ejecuto primero");
 });
 
 //trabajamos con el boton del formulario
 
 //Busco el elemento cuya clase es '.boton', si quisiera buscar por id con querySelector, entonces buscaría '#boton'
-console.clear();
+//console.clear();
+//Estoy obteniendo la referencia del html asociado al id botonEnviar
 const botonEnviar=document.querySelector('#botonEnviar');
 console.log(botonEnviar);
 botonEnviar.addEventListener('click', function(miEvento) {
