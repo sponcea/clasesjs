@@ -69,13 +69,13 @@ function mostrarMensajeOk(mensaje) {
 }
 
 //2da forma, optimizamos un poco el código
-function mostrarMensaje(mensaje,bandera) {
+function mostrarMensaje(mensaje,tipoMensaje) {
     //Creamos un elemento del tipo párrafo
     const bloque=document.createElement('p');
     //agregamos contenido al elemento del tipo párrafo
     bloque.textContent=mensaje;
     //Dependendiendo de la condicional se mostrara con la clases error u ok
-    if (bandera==='Correcto') {
+    if (tipoMensaje==='Correcto') {
         bloque.classList.add('mensajeOk');
     } else {
         bloque.classList.add('mensajeError');

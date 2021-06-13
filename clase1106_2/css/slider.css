@@ -1,0 +1,25 @@
+.slider {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#imagen {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border:solid 1px ;
+}
+
+#atras, #adelante {
+    display: flex;
+    align-items: center;
+    justify-content: content;
+    font-size: 40px;
+    
+}
+
+.fas {
+    cursor: pointer;
+}

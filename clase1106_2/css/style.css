@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root {
     --primario: #30475e;
     --secundario: #f05454;
@@ -25,7 +25,7 @@ html {
 body {
     font-size: 16px; /* 1rem=10px */
     font-family: 'Lato', sans-serif;    
-    background-image: linear-gradient(to top, #ddd 0%, var(--blanco) 100%);
+    background-image: linear-gradient(to top, var(--plomo) 0%, var(--blanco) 100%);
 }
 
 h1.titulo {
@@ -236,7 +236,7 @@ footer p {
     text-align: center;
 }
 
-/********Estilos DARK MOE*********/
+/********Estilos DARK MODE*********/
 .dark-mode {
     background: black;
     color: white;
